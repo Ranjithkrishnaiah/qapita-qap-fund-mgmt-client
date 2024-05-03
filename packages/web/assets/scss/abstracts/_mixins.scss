@@ -1,0 +1,122 @@
+   @mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+  }
+  
+    /******
+     * Overlay
+     ******/
+  
+  @mixin overlay() {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+    /******
+     * Border Radius
+     ******/
+  
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+    /******
+     * Psuedo
+     ******/
+  
+  @mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+  }
+  
+    /******
+     * Truncate (ellipsis...)
+     ******/
+  
+  @mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+    /******
+      * Transition
+       ******/
+  
+  @mixin transition($what: all, $time: 300ms, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition: $what $time $how;
+    -ms-transition: $what $time $how;
+    -o-transition: $what $time $how;
+    transition: $what $time $how;
+  }
+    /******
+     * Box Shadow
+     ******/
+  
+  @mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow:$shadow;
+  }
+    /******
+     * Generic Transform
+     ******/
+  
+  @mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+  }
+    /******
+     * Transform Rotate
+     ******/
+  
+  @mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
+  }
+    /******
+     * Transform Scale
+     ******/
+  
+  @mixin scale($scale1, $scale2, $scale3) {
+    @include transform(scale3d($scale1, $scale2, $scale3));
+  }
+    /******
+     * Transform Translate
+     ******/
+  
+  @mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+  }
+    /******
+     * Transform Skew
+     ******/
+  
+  @mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+  }
+    /******
+     * Transform Origin
+     ******/
+  
+  @mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
+  }
+  

@@ -1,0 +1,96 @@
+@import "../../../../../assets/scss/abstracts/variables";
+
+form.firmProfileForm {
+  padding: 0px 30px 15px 30px;
+  @media all and (max-width: 767px) {
+    padding: 0px;
+  }
+
+  h4.firmProfileForm__headline {
+    border-bottom: 1px solid#B8B8B8;
+    padding-bottom: 5px;
+    margin: 20px 0px;
+    font-size: 14px;
+    color: #4f4f4f;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+
+  .firmProfileForm__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px 30px;
+    @media all and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  .ant-modal-body {
+    padding: 30px 50px;
+  }
+
+  .firmProfileInputField {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    color: #333333;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-bold;
+    padding: 0px 0px 5px 0px;
+  }
+
+  label {
+    font-size: 12px;
+    color: #202020;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+  }
+
+  // .ant-select-selection-item {
+  //   top: -3px;
+  // }
+
+  // .ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+  //   .ant-select-selector {
+  //   padding: 0px 7px;
+  //   /* top: -2px; */
+  // }
+
+  .ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+    .ant-select-selector {
+    height: 34px;
+  }
+
+  .ant-select-selector {
+    display: flex;
+    align-items: center;
+  }
+
+  // .ant-select {
+  //   .ant-select-selector {
+  //     padding: 0px;
+  //     height: 24px;
+  //   }
+  // }
+}
+
+.ant-modal-title {
+  font-size: 16px;
+  color: #202020;
+  font-family: $font-family-lato;
+  font-weight: $font-weight-bold;
+}
+
+.ant-modal-footer {
+  button {
+    font-size: 14px;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-bold;
+    border-radius: 6px;
+  }
+
+  button.firmProfileCancelBtn {
+    color: $primary-color-purple;
+    border: 1px solid $primary-color-purple;
+  }
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: $font-family-roboto;
+  margin: 0;
+  font-size: 14px;
+  color: $font-primary;
+  background-color: #e5e5e5;
+}
+a:hover {
+  text-decoration: none;
+  color: $primary-color-purple;
+}
+a {
+  text-decoration: none;
+  color: $primary-color-purple;
+}
+::selection {
+  color: $color-white;
+  background: $primary-color-purple;
+}
+
+@media all and (min-width: 768px) {
+  .visible-xs {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .visible-lg {
+    display: none;
+  }
+}
+
+section.ant-layout.main-section {
+  height: calc(100vh - 64px);
+  overflow-y: scroll;
+  padding: 15px;
+}
+
+.ant-layout {
+  background: #fbfbff;
+}
+
+.ant-modal {
+  height: calc(100% - 3.5rem);
+
+  .ant-modal-content {
+    overflow: hidden;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ant-modal-body {
+    overflow-y: auto;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-gap: 6px;
+  align-items: center;
+
+  .gridElement {
+    display: grid;
+    grid-gap: 10px;
+  }
+}
+
+.gridTableHeader {
+  border-top: 2px solid #202020;
+  border-bottom: 1px solid #633ea5;
+  background: $primary-color-purple-light;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  padding: 8px 16px;
+}
+
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  .ant-dropdown-menu-title-content {
+    a {
+      color: $primary-color-purple;
+    }
+  }
+}
+
+.gutterEightPixelRight {
+  padding-right: 5px !important;
+}
+
+.gutterEightPixelLeft {
+  padding-left: 5px !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $primary-color-purple;
+  border-color: $primary-color-purple;
+}

@@ -1,0 +1,14 @@
+.tick line {
+  stroke: #c6c6c6;
+}
+.dot {
+  fill: #4682b4;
+}
+text,
+.tick {
+  color: #4f4f4f;
+  /* add font family */
+}
+.focus circle {
+  fill: none;
+}

@@ -1,0 +1,21 @@
+.wrapperChildGold {
+  background: #ffffff;
+  border: 1px solid #ececec;
+}
+
+.fundInvestmentWidgetWrapper.fundPerformanceWidgetWrapper {
+  grid-template-columns: 1fr 2fr 2fr;
+
+  @media all and (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrapperChildGold {
+    background: #ffffff !important;
+    border: 1px solid #ececec !important;
+
+    .wrapperChildGold__usd {
+      color: #bdbdbd;
+    }
+  }
+}

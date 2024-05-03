@@ -1,0 +1,145 @@
+@import "../../../../assets/scss/abstracts/variables";
+
+.companiesTableSelectors {
+  &__filters {
+    display: flex;
+    align-items: center;
+  }
+
+  &__groupBy {
+    display: flex;
+    align-items: center;
+
+    h4 {
+      font-size: 15px;
+      color: $font-primary;
+      font-weight: $font-weight-bold;
+      margin: 0;
+      margin-right: 10px;
+
+      @media all and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.groupByBlock {
+  .ant-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    cursor: pointer;
+
+    span.spanFilterIcon {
+      background: #e7e7eb;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      border-radius: 6px 0px 0px 6px;
+
+      svg {
+        fill: $primary-color-purple;
+      }
+    }
+
+    span.spanDropdownIcon {
+      background: #d0d0d0;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      border-radius: 0px 6px 6px 0px;
+
+      svg {
+        fill: $primary-color-purple;
+      }
+    }
+  }
+}
+
+.groupByBlock.groupByFilter {
+  margin: 0 15px;
+}
+
+.groupByBlock.groupByDownload {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 30px;
+    color: $primary-color-purple;
+  }
+}
+
+.groupByBlock.groupByViewType {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  padding-left: 20px;
+  position: relative;
+
+  @media all and (max-width: 767px) {
+    display: none;
+  }
+
+  .ant-radio-group {
+    .ant-radio-button-wrapper {
+      background: transparent;
+      padding: 0;
+      border-color: transparent;
+    }
+
+    .ant-radio-button-wrapper:not(:first-child)::before {
+      display: none;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      &:focus-within {
+        box-shadow: none;
+      }
+    }
+
+    .ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+      span {
+        svg {
+          fill: $primary-color-purple;
+        }
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: $font-primary;
+    left: 0px;
+    top: 0px;
+  }
+
+  span {
+    cursor: pointer;
+
+    svg {
+      font-size: 30px;
+      fill: #c4c4c4;
+    }
+
+    &:first-of-type {
+      margin-right: 15px;
+    }
+  }
+}
+
+.logo {
+  background-color: red;
+  -webkit-mask: url("../../../../assets/images/grid.svg") no-repeat center;
+  mask: url("../../../../assets/images/grid.svg") no-repeat center;
+  src: url("../../../../assets/images/grid.svg");
+}

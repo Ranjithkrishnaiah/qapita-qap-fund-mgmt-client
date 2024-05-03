@@ -1,0 +1,22 @@
+.customRolesBtn {
+  background-color: #633ea5;
+  border-radius: 4px;
+  color: white;
+  font-family: "Lato", sans-serif;
+
+  &:hover {
+    background-color: #673ead;
+    color: white;
+  }
+}
+
+.customRoleChecboxGroup {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: flex-start;
+}
+
+.customRoleChecboxGroup label {
+  margin-right: 5px;
+  width: 120px;
+}

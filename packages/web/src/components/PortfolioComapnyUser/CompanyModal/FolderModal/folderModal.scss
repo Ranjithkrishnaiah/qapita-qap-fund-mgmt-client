@@ -1,0 +1,39 @@
+.newstyle3 .ant-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.newstyle3 .ant-modal-body {
+  .Newfolder1 {
+    .InputText {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: #202020;
+    }
+
+    .CheckBoxtext {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: #333333;
+    }
+
+    .notiText {
+      margin: 0px;
+    }
+  }
+}
+
+.Icon {
+  margin: 0px 7px 0px -7px;
+  height: 13px;
+}

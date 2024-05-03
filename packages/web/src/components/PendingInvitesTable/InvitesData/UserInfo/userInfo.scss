@@ -1,0 +1,37 @@
+.userInfoCont {
+  display: flex;
+  align-items: flex-start;
+}
+
+.userNameCont {
+  margin-left: 15px;
+}
+
+.userName {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.userRole {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6e6e6e;
+  margin-top: -10px;
+}
+
+.userAvatar {
+  margin-top: -5px;
+}
+
+.userRolePopover {
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}

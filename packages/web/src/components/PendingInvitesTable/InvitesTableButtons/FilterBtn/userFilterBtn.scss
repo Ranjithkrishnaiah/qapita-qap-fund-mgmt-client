@@ -1,0 +1,26 @@
+.filterIconsCont {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.spanFilterIcon {
+  background-color: #e7e7eb;
+  padding: 0.2em;
+}
+
+.downIconCont {
+  background-color: #d0d0d0;
+  padding: 0.2em;
+}
+
+.filterIconDiv {
+  // width: 100px;
+  cursor: pointer;
+}
+
+.filterIconDiv > svg {
+}

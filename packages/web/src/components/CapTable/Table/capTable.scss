@@ -1,0 +1,24 @@
+.subHeadingRow {
+  color: #633ea5;
+  font-family: "Lato", sans-serif;
+  cursor: default;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  &:hover > td {
+    background-color: #ffff !important;
+  }
+}
+
+.captable .ant-table-thead tr th {
+  color: #202020;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  background-color: #f9edfd;
+  line-height: 18px;
+  border-bottom: 1px solid #633ea5;
+  border-top: 2px solid #633ea5;
+  // padding: 2px !important;
+  width: 20% !important;
+}

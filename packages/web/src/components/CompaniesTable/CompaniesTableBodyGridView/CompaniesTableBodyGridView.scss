@@ -1,0 +1,144 @@
+@import "../../../../assets/scss/abstracts/variables";
+
+.CompaniesTableCard_wrapper {
+  padding-top: 15px;
+  border-top: 2px solid #202020;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+
+  @media all and (max-width: 991px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media all and (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+
+  .CompaniesTableCard {
+    width: 100%;
+    height: 270px;
+
+    &:hover {
+      .CompaniesTableCard__content {
+        transform: rotateY(180deg);
+        transition: transform 0.5s;
+      }
+    }
+
+    .CompaniesTableCard__front,
+    .CompaniesTableCard__back {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: white;
+      color: #03446a;
+      border-radius: 6px;
+      backface-visibility: hidden;
+      padding: 15px 10px 10px 10px;
+      box-shadow: $shadow;
+    }
+
+    .CompaniesTableCard__back {
+      background: $primary-color-purple;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .CompaniesTableCard__content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s;
+      transform-style: preserve-3d;
+
+      .CompaniesTableCard__front {
+        .CompaniesTableCard__frontTitle {
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px;
+
+          img {
+            width: 28px;
+            height: 28px;
+            margin-right: 5px;
+          }
+
+          h4 {
+            margin: 0px;
+            font-size: 18px;
+            font-weight: $font-weight-bold;
+            color: $font-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.CompaniesTableCard__listing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px 6px;
+  padding: 20px 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  background: #fcfcfc;
+
+  @media all and (min-width: 992px) and (max-width: 1200px) {
+    padding: 10px 5px;
+  }
+
+  .CompaniesTableCard__listingGrid {
+    span {
+      font-family: $font-family-lato;
+      color: #4f4f4f;
+      font-size: 12px;
+      font-weight: $font-weight-regular;
+    }
+
+    h4 {
+      color: $font-primary;
+      font-size: 18px;
+      font-weight: $font-weight-bold;
+      margin: 0px;
+      word-break: break-all;
+      line-height: 26px;
+
+      @media all and (min-width: 992px) and (max-width: 1200px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.CompaniesTableCard__back {
+  .CompaniesTableCard__backArrow {
+    text-align: right;
+    margin-bottom: 10px;
+
+    svg {
+      fill: #c4c4c4;
+    }
+  }
+
+  .CompaniesTableCard__listing {
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    background: transparent;
+
+    @media all and (min-width: 992px) and (max-width: 1200px) {
+      grid-gap: 5px 5px;
+    }
+
+    .CompaniesTableCard__listingGrid {
+      span {
+        color: $menu-font-color;
+      }
+      h4 {
+        color: $color-white;
+      }
+    }
+  }
+}

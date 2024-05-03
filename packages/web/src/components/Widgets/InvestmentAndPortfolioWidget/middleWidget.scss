@@ -1,0 +1,20 @@
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middleWidgetWrapper {
+  //   margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.investmentWrapper {
+  flex: 1;
+  border: 1px solid lightgray;
+  margin: 1rem;
+  border-radius: 6px;
+  padding: 1.5em;
+}

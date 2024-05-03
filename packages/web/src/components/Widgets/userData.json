@@ -1,0 +1,30 @@
+{
+  "companyDetails": [
+    { "id": 1, "value": "https://bit.ly/3EKpxpv", "property": "Qapita" }
+  ],
+  "companyOverview": [
+    { "id": 1, "value": "10", "property": "Portfolio Companies" },
+    { "id": 2, "value": "3", "property": "Funds" }
+  ],
+  "portfolioComposition": {},
+  "investments": [
+    {
+      "id": 5,
+      "value": "200,000",
+      "property": "Total Capital Invested"
+    },
+    {
+      "id": 6,
+      "value": "364,568",
+      "property": "Fair Value Of Investments"
+    },
+    { "id": 1, "value": "3,908,143", "property": "Unrealised Gain/Loss" },
+    { "id": 2, "value": "8,201,143", "property": "Realised Gain/Loss" },
+    { "id": 3, "value": "1.6X", "property": "Multiple" },
+    { "id": 4, "value": "6,070,499", "property": "Gain/Loss" },
+    { "id": 7, "value": "0", "property": "Realized Value" },
+    { "id": 8, "value": "6.30", "property": "IRR %" }
+  ],
+  "investmentsHistory": {},
+  "fundSummary": [{ "id": 1, "value": "300,000,000", "property": "Fund Size" }]
+}

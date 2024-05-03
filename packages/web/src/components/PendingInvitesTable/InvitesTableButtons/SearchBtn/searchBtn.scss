@@ -1,0 +1,33 @@
+@import "../../../../../assets/scss/abstracts/variables";
+
+.searchIconCont {
+  cursor: pointer;
+}
+
+.searchIcon {
+  color: #633ea5;
+  font-size: 18px;
+}
+
+.searchInput {
+  width: 256px;
+  height: 40px;
+  border-radius: 4px;
+  ::placeholder {
+    font-size: 14px;
+    color: #666666;
+    font-family: $font-family-lato;
+  }
+  border-color: #633ea5;
+}
+
+.ant-input:focus {
+  border-color: #633ea5;
+  outline: none !important;
+  -webkit-box-shadow: 0 0 0 2px rgba(99, 62, 165, 0.2);
+  box-shadow: 0 0 0 2px rgba(99, 62, 165, 0.2);
+}
+
+.closeCircleSearch {
+  font-size: 20px;
+}

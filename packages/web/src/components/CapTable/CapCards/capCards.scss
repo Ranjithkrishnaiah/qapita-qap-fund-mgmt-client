@@ -1,0 +1,46 @@
+.capCardsRow {
+  margin-bottom: 20px;
+}
+
+.capCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.capCard p {
+  &:hover {
+    cursor: default;
+  }
+}
+
+.capHeading {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.capContent {
+  color: #333333;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.capPrefixCurrency {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #b8b8b8;
+}

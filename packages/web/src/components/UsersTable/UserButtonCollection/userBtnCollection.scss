@@ -1,0 +1,22 @@
+.userTableBtnsRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  //   border: 2px solid black;
+  height: 40px;
+}
+
+.userTableBtnsCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   border: 1px solid blue;
+}
+
+.userTableSearchBtnCont {
+  width: 20%;
+  //   border: 1px solid green;
+  margin-right: 13px;
+  display: flex;
+  justify-content: flex-end;
+}

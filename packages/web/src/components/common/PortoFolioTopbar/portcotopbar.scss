@@ -1,0 +1,60 @@
+.divider {
+  height: 100%;
+  color: black;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+}
+
+.companyInfo h3 {
+  color: #047cca;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-bottom: 0px;
+
+  @media all and (max-width: 478px) {
+    display: none;
+  }
+}
+
+.logoWrapper {
+  width: 30px;
+}
+
+.logoWrapper img {
+  width: 100%;
+}
+
+.topBarWrapper1 {
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.dashboardTitle {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 143.2%;
+  color: #333333;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.companyName1 {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23.74px;
+  color: #7c993c !important;
+}
+
+.divider12 {
+  border: 1px solid #633ea5;
+}

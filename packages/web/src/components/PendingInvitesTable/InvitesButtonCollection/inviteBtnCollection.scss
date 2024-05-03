@@ -1,0 +1,57 @@
+// .userTableBtnsRow {
+//   justify-content: flex-end;
+//   padding: 0.5em;
+//   align-items: center;
+// }
+
+// .inviteTableBtnsRow {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-top: 8px;
+//   margin-bottom: 8px;
+//   // padding: 0.5em;
+// }
+
+// .inviteTableBtnCollection {
+//   display: flex;
+// }
+
+// .inviteTableBtnCollection div:not(:first-child) {
+//   margin-left: 8px;
+// }
+
+// .inviteTableIconCollection {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .inviteTableIconCollection {
+//   margin-right: 8px;
+// }
+
+.inviteTableBtnsRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 40px;
+  // border: 2px solid black;
+}
+
+.inviteTableBtnsCont {
+  min-width: 280px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: 1px solid blue;
+}
+
+.inviteTableSearchBtnCont {
+  width: 20%;
+  // border: 1px solid green;
+  margin-right: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

@@ -1,0 +1,27 @@
+@import "../../../../assets/scss/abstracts/variables";
+
+.protcoTableBody {
+  .protcoLogo {
+    width: 28px;
+  }
+}
+
+button.ant-btn.sendInviteBtn.firmProfileUpdateBtn {
+  pointer-events: auto;
+}
+
+.companyName {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.content {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}

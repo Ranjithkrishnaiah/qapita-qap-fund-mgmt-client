@@ -1,0 +1,34 @@
+.transSelect > .ant-select-selector {
+  background-color: #e7e7eb !important;
+  color: #633ea5;
+  font-weight: bold;
+  font-size: 18px !important;
+  font-family: "Lato", sans-serif;
+}
+
+.transSelect {
+  width: 100% !important;
+}
+
+.transSelect > span {
+  color: #633ea5;
+  font-weight: bold;
+}
+
+.transSelectBtnCont {
+  width: 250px;
+}
+.ant-select-arrow {
+  height: 32px;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  right: 0px;
+  justify-content: center;
+  padding: 0px 10px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.ant-select-single .ant-select-selector {
+  border-radius: 5px !important;
+}

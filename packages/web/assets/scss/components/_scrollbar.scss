@@ -1,0 +1,24 @@
+@import "../abstracts/variables";
+/**
+ * scrollbar.scss
+ */
+.scrollbar,
+.ant-modal-body {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: #c4c4c4;
+      border-radius: 8px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    visibility: hidden;
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    transition: 0.5s ease;
+  }
+}

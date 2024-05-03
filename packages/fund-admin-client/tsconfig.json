@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2020",
+    "outDir": "./dist/esm",
+    "types": [],
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es2018", "dom"]
+  },
+  "include": ["src/**/*.ts", "src/axiosInstance.tsx", "src/axiosInstance.tsx", "src/services/dashboard-template/index.tsx"]
+}

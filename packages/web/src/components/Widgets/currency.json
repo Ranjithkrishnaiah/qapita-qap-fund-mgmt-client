@@ -1,0 +1,59 @@
+[
+    {
+        "id" :  1,
+        "name": "SGD"
+    },
+    {
+        "id" :  2,
+        "name": "INR"
+    },
+    {
+        "id" :  3,
+        "name": "USD"
+    },
+    {
+        "id" :  4,
+        "name": "PHP"
+    },
+    {
+        "id" :  5,
+        "name": "MYR"
+    },
+    {
+        "id" :  6,
+        "name": "IDR"
+    },
+    {
+        "id" :  7,
+        "name": "CNY"
+    },
+    {
+        "id" :  8,
+        "name": "BDT"
+    },
+    {
+        "id" :  9,
+        "name": "ILS"
+    },
+    {
+        "id" :  10,
+        "name": "EUR"
+    },
+    {
+        "id" :  11,
+        "name": "THB"
+    },
+    {
+        "id" :  12,
+        "name": "VND"
+    },
+    {
+        "id" :  13,
+        "name": "HKD"
+    },
+    {
+        "id" :  14,
+        "name": "TWD"
+    }
+  
+]

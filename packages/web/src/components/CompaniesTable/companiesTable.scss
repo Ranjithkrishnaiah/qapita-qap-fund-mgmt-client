@@ -1,0 +1,244 @@
+@import "../../../assets/scss/abstracts/variables";
+
+.companiesTable_block {
+  .companiesTableSelectors {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+      h2 {
+        color: $font-content;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        margin: 0;
+      }
+    }
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-gap: 6px;
+    padding: 10px 0px;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    .gridElement {
+      display: grid;
+      grid-gap: 10px;
+      grid-auto-flow: column;
+      grid-auto-columns: 200px;
+      padding: 18px 10px;
+
+      @media all and (max-width: 767px) {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .gridItem {
+        h4 {
+          margin: 0px;
+          color: #202020;
+          word-break: break-all;
+
+          @media all and (max-width: 767px) {
+            font-family: $font-family-roboto;
+            font-size: 14px;
+            color: $font-primary;
+            font-weight: $font-weight-bold;
+            margin-bottom: -5px;
+          }
+        }
+
+        span {
+          word-break: break-all;
+          color: #6e6e6e;
+          font-family: $font-family-lato;
+          font-size: 12px;
+          font-weight: $font-weight-regular;
+
+          @media all and (min-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .companiesTableHeader.gridElement {
+    border-top: 2px solid #202020;
+    border-bottom: 1px solid $primary-color-purple;
+    background: $primary-color-purple-light;
+
+    @media all and (max-width: 767px) {
+      display: none;
+    }
+
+    h4 {
+      font-weight: $font-weight-bold;
+      font-size: 14px;
+
+      span {
+        display: block;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .companiesTableBody.gridElement {
+    border-radius: 6px;
+    font-family: $font-family-lato;
+
+    .gridItem.companyValuationBlock {
+      svg {
+        margin-left: 5px;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 2px;
+
+        path {
+          @media all and (max-width: 767px) {
+            fill: $menu-font-color;
+            display: none;
+          }
+        }
+      }
+    }
+
+    .gridItem.proctoImgBlock {
+      font-family: $font-family-lato;
+
+      @media all and (max-width: 767px) {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        margin-left: 0px;
+        border-bottom: 1px solid $secondary-color-grey;
+        padding-bottom: 15px;
+      }
+
+      h4 {
+        font-weight: $font-weight-bold;
+
+        @media all and (max-width: 767px) {
+          font-size: 16px;
+          color: $font-primary;
+          font-family: $font-family-lato;
+        }
+      }
+    }
+  }
+}
+
+.companiesTable__accordion {
+  border: none;
+  background: transparent;
+
+  .ant-collapse-header {
+    @media all and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .ant-collapse-item {
+    box-shadow: 0px 2px 2px rgba(51, 51, 51, 0.1);
+    background: $color-white;
+    border: none;
+    margin-bottom: 6px;
+    border-radius: 6px !important;
+
+    @media all and (max-width: 767px) {
+      margin-bottom: 2px;
+    }
+
+    .ant-collapse-content {
+      border-radius: 0px 0px 6px 6px !important;
+    }
+
+    .ant-collapse-content-box {
+      padding: 0px;
+      margin-left: 210px;
+
+      @media all and (max-width: 767px) {
+        margin-left: 0px;
+      }
+    }
+
+    .ant-collapse-header {
+      padding: 0px;
+
+      span.anticon.ant-collapse-arrow {
+        position: absolute;
+        margin-right: 0px;
+        left: 10px;
+
+        @media all and (max-width: 767px) {
+          right: 10px;
+          left: auto;
+          top: 22px;
+          background: $menu-font-color;
+          border-radius: 50%;
+          color: $color-white;
+          padding: 2px;
+        }
+      }
+    }
+  }
+
+  .ant-collapse-item.ant-collapse-item-active {
+    background: $primary-color-purple-light;
+
+    @media all and (max-width: 767px) {
+      background: #fcf8ef;
+    }
+
+    .ant-collapse-header {
+      box-shadow: 0px 1px 4px rgba(99, 62, 165, 0.5);
+
+      @media all and (max-width: 767px) {
+        box-shadow: 0px 0px 0px rgba(99, 62, 165, 0.5);
+        border-bottom: 1px solid $menu-font-color;
+      }
+    }
+
+    .ant-collapse-header span.anticon.ant-collapse-arrow {
+      svg {
+        @media all and (min-width: 768px) {
+          fill: $primary-color-purple;
+        }
+      }
+    }
+
+    .ant-collapse-content.ant-collapse-content-active {
+      background: $primary-color-purple-light;
+
+      @media all and (max-width: 767px) {
+        background: #fcf8ef;
+      }
+    }
+  }
+}
+
+.companiesTableHeader.gridElement {
+  .gridItem {
+    span {
+      @media all and (min-width: 768px) {
+        display: block !important;
+      }
+    }
+  }
+}
+
+.customTableHead {
+  margin: 16px 0px 0px;
+  display: inline-block;
+  text-align: center;
+  user-select: auto;
+}
+
+.headDescription {
+  font-size: 12px;
+  color: $color-black;
+}

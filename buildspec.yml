@@ -1,0 +1,29 @@
+version: 0.2
+batch:
+  build-list:
+    - identifier: build_automation_fund_mgmt_client
+phases:
+  pre_build:
+    commands:
+       - cd packages/web
+      #- npx lerna bootstrap --ci --ignore-scripts --concurrency 4
+      #- cp -rL node_modules node_modules_1
+      #- rm -rf node_modules
+      #- mv node_modules_1 node_modules
+      #- ls -l
+      #- ls -lR node_modules/@qapita
+  build:
+    commands:
+      - echo Building client for dev server
+     #- cd packages/web
+      - npm run build
+  post_build:
+    commands:
+      - rm -rf qapita-fundadminui.zip
+      - cd dist && zip -r ../qapita-fundadminui.zip * && cd ..
+artifacts:
+  files:
+    - packages/web/qapita-fundadminui.zip
+    - appspec.yml
+    - deploy-dev-client.sh
+  name: client-$CODEBUILD_RESOLVED_SOURCE_VERSION

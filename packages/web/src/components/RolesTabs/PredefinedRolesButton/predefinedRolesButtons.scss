@@ -1,0 +1,29 @@
+.manageRolesHeading {
+  color: #333333;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.predefinedRolesRadio {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #4f4f4f;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #633ea5 !important ;
+}
+
+.ant-radio-inner {
+  border-color: #633ea5 !important ;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #633ea5;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: #633ea5;
+}

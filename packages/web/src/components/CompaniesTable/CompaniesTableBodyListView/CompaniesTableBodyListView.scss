@@ -1,0 +1,35 @@
+@import "../../../../assets/scss/abstracts/variables";
+
+.gridItem.proctoImgBlock {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+
+  img {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+  }
+}
+
+.accordionExpandContent {
+  .companiesTableBody.gridElement {
+    border-bottom: 1px solid $primary-color-purple;
+    border-radius: 0;
+
+    @media all and (max-width: 767px) {
+      border-bottom: 1px solid $menu-font-color;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    .gridItem.capitalInvestedGrid {
+      @media all and (max-width: 767px) {
+        grid-row: 1/2;
+        grid-column: 1/4;
+      }
+    }
+  }
+}

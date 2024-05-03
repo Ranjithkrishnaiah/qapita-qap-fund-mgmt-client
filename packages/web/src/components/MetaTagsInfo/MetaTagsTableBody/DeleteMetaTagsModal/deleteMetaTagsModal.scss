@@ -1,0 +1,15 @@
+@import "../../../../../assets/scss/abstracts/variables";
+
+.ant-modal.createMetaTagsModal {
+  height: auto;
+}
+
+form.createMetaTagsForm {
+  padding: 0;
+}
+
+h1.deleteMetaTag__title {
+  font-size: 16px;
+  color: #202020;
+  font-family: $font-family-lato;
+}

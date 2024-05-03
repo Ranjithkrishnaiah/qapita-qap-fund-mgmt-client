@@ -1,0 +1,113 @@
+@import "../../../../assets/scss/abstracts/variables";
+
+.ant-modal.linkPortCoModal {
+  height: auto;
+}
+
+.linkPortCoModalTitle {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: $primary-color-purple;
+    transform: rotate(45deg);
+    font-size: 26px;
+    margin-right: 10px;
+  }
+}
+
+.linkPortCoModal_TableWrapper {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
+    padding: 14px 10px;
+
+    @media all and (max-width: 576px) {
+      display: grid !important;
+    }
+  }
+
+  span.ant-checkbox {
+    margin-right: 10px;
+  }
+
+  .TableHeader.gridTableHeader.gridContainer {
+    .gridItem {
+      h4 {
+        margin: 0px;
+        font-family: $font-family-lato;
+        font-weight: $font-weight-bold;
+        font-size: 14px;
+        color: #333333;
+        text-transform: uppercase;
+
+        @media all and (max-width: 576px) {
+          font-size: 12px;
+        }
+
+        label.ant-checkbox-wrapper {
+          @media all and (max-width: 576px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .TableBody.gridTableBody.gridContainer {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 20px 10px;
+
+    .gridItem {
+      h4 {
+        margin: 0px;
+        font-family: $font-family-lato;
+        font-weight: $font-weight-bold;
+        font-size: 14px;
+        color: #333333;
+
+        @media all and (max-width: 576px) {
+          font-size: 12px;
+        }
+
+        label.ant-checkbox-wrapper {
+          @media all and (max-width: 576px) {
+            font-size: 12px;
+          }
+        }
+
+        svg {
+          margin-right: 6px;
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+  }
+}
+
+.linkPortCoModal_noteText {
+  margin-bottom: 20px;
+
+  ul {
+    list-style-type: decimal;
+    line-height: 26px;
+    font-family: $font-family-lato;
+    margin-left: -27px;
+    font-weight: $font-weight-regular;
+    font-size: 14px;
+  }
+
+  p {
+    font-family: $font-family-lato;
+    margin: 0px;
+    font-weight: $font-weight-regular;
+    font-size: 14px;
+  }
+}
+
+.ant-table-wrapper.linkPortCoTable {
+  th,
+  td {
+    padding: 16px;
+  }
+}

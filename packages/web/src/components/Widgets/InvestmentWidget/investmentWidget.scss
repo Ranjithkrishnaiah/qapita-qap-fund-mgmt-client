@@ -1,0 +1,49 @@
+.investmentWidgetsWrapper {
+  background-color: #633ea5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (max-width: 576px) {
+    background-color: #fff;
+    border: none;
+    margin-top: 15px;
+  }
+}
+
+.investmentWrapper {
+  margin-bottom: 15px;
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.investmentCards {
+  margin-bottom: 16px;
+}
+
+.investmentTitleIcon {
+  color: white;
+}
+
+.investmentTitle {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.investmentIconCont {
+  text-align: right;
+  width: 100%;
+}
+
+.investmentIcon {
+  font-size: 16px;
+}

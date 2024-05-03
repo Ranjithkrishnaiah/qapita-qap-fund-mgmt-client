@@ -1,0 +1,47 @@
+.lineChartWidgetWrapper {
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  margin-top: 10px;
+  padding: 0.7em;
+  margin-bottom: 10px;
+}
+
+.lineChartHeading {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.lineChartContainer {
+  display: flex;
+}
+
+.lineChartAxisLabelCont {
+  flex: 0.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineChartAxisLabel {
+  transform: rotateZ(-90deg);
+}
+
+.lineChartAxisLabel p {
+  color: #4f4f4f;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.lineChartPlot {
+  flex: 1;
+}

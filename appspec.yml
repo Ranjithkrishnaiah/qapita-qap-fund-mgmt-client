@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: packages/web/qapita-fundadminui.zip
+    destination: /home/ubuntu/deploy-automation
+hooks:
+  ApplicationStart:
+    - location: deploy-dev-client.sh
+      timeout: 300

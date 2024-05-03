@@ -1,0 +1,87 @@
+.taskInfoCard {
+  background: #fcfcfc;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.taskInfoHeading {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ff863a;
+}
+
+.taskHeading {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4f4f4f;
+}
+.textPart {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4f4f4f;
+  margin-bottom: 22px;
+}
+
+.ant-card-body {
+  padding: 10px;
+}
+
+.taskInfoAccepte {
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6e6e6e;
+}
+
+.taskInfoDecline {
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6e6e6e;
+}
+
+.fundInfoColTwo {
+  margin-top: -1px;
+}
+
+.InfcolThree {
+  margin-top: -15px;
+}
+
+.InfcolFour div {
+  display: inline-flex;
+  width: 50%;
+  //   margin-bottom: -20px;
+}
+
+.taskInfoCardRow {
+  padding: 0px 0px;
+}
+
+.InfcolFour div svg {
+  margin-right: 5px;
+}
+
+// #accepticon {
+//   margin-left: -10px;
+// }
+
+// #declineicon {
+//   margin-left: -20px;
+// }

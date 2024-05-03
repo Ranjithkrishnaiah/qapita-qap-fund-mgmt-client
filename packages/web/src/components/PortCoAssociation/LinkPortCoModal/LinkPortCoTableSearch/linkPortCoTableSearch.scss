@@ -1,0 +1,16 @@
+@import "../../../../../assets/scss/abstracts/variables";
+
+.linkPortCoTable_Search {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.ant-input-affix-wrapper {
+  background: #faf9f9;
+
+  input.ant-input {
+    background: #faf9f9;
+    font-size: 12px;
+    font-family: $font-family-lato;
+  }
+}

@@ -1,0 +1,98 @@
+.fundCardWrapper {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  @media all and (max-width: 991px) {
+    margin-bottom: 0px;
+  }
+}
+
+.fundRowOne {
+  margin-top: 10px;
+}
+
+.moreOutlined {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moreOulinedIcon {
+  font-size: 17px;
+}
+
+.fundNameHeading {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.fundInfoCard {
+  background: #fcfcfc;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 20px 10px 0px;
+}
+
+.fundInfoHeading {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  //   line-height: 14px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}
+
+.fundInfoData {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.fundInfoCurrency {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #bdbdbd;
+}
+
+.fundInfoColTwo {
+  margin-top: -12px;
+}
+
+.fundRowOne {
+  padding: 0px 10px;
+}
+
+.fundInfoCardRow {
+  padding: 0px 10px;
+}
+
+.fundInfoBottomRow {
+  margin-top: 20px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #fcfcfc;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.fundInfoBottomRowTwo {
+  text-align: center;
+}
+
+.borderToshow {
+  border-right: 1px solid #b8b8b8;
+}

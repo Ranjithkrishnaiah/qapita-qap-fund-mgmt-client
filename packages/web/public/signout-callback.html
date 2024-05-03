@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+   
+
+    <script src="oidc-client.min.js"></script>
+    <script>
+        new Oidc.UserManager({ response_mode: "query" }).signoutRedirectCallback().then(function () {
+            window.location = "/";
+        }).catch(function (e) {
+            console.error(e);
+        });
+    </script>
+
+</body>
+
+</html>

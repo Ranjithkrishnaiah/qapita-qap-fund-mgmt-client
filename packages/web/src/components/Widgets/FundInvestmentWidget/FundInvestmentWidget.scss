@@ -1,0 +1,128 @@
+.wrapperChildGold {
+  background: #ffffff;
+  border: 1px solid #ececec;
+}
+
+.fundInvestmentWidgetWrapper {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-gap: 10px;
+
+  @media all and (max-width: 767px) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .element__funds {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+
+    @media all and (max-width: 767px) {
+      grid-column: 2 / 2;
+      grid-row: 3/4;
+    }
+
+    .fundsIconCont {
+      display: none;
+    }
+  }
+  .element__capitalInvested {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+
+    @media all and (max-width: 767px) {
+      grid-column: 1 / 2;
+      grid-row: 2/3;
+    }
+
+    .wrapperChildGold {
+      background: #ffffff !important;
+      border: 1px solid #ececec !important;
+
+      .wrapperChildGold__usd {
+        color: #bdbdbd;
+      }
+    }
+  }
+  .element__gainLoss {
+    grid-column: 3 / 4;
+    grid-row: 1/2;
+
+    @media all and (max-width: 767px) {
+      grid-column: 1 / 2;
+      grid-row: 3/4;
+    }
+  }
+  .element__multiple {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+
+    @media all and (max-width: 767px) {
+      grid-column: 2 / 2;
+      grid-row: 4/5;
+    }
+  }
+  .element__fairValue {
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+
+    @media all and (max-width: 767px) {
+      grid-column: 1 / 3;
+      grid-row: 1/2;
+    }
+  }
+  .element__realizedValue {
+    grid-column: 3 / 4;
+    grid-row: 2/3;
+
+    @media all and (max-width: 767px) {
+      grid-column: 1 / 2;
+      grid-row: 4/5;
+    }
+  }
+  .element__portfolioCompanies {
+    grid-column: 4 / 4;
+    grid-row: 1/3;
+
+    @media all and (max-width: 767px) {
+      grid-column: 2 / 2;
+      grid-row: 2/3;
+    }
+
+    .wrapperChildWhite {
+      height: 100%;
+    }
+  }
+
+  .investmentCards {
+    margin-bottom: 0px;
+
+    @media all and (max-width: 576px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  .ant-row.fundInvestmentTopRow {
+    margin-bottom: 10px;
+
+    @media all and (max-width: 576px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .ant-col.investmentCards.fundInvestmentLastCol {
+    @media all and (max-width: 991px) {
+      margin-top: 10px;
+    }
+
+    @media all and (max-width: 576px) {
+      margin-top: 0px;
+    }
+
+    .wrapperChildWhite {
+      @media all and (min-width: 992px) {
+        height: 100%;
+      }
+    }
+  }
+}

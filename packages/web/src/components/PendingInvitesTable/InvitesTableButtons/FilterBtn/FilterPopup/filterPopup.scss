@@ -1,0 +1,64 @@
+.filterPopupCont {
+  padding: 1em;
+}
+
+.filterType {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #633ea5;
+}
+
+.filterProperty {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+ul {
+  list-style: none;
+  margin-left: -30px;
+}
+
+.filterBtnsCont {
+  width: 100%;
+  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.clearFilterBtn {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #633ea5;
+}
+
+.applyFilterBtn {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #633ea5;
+  color: #ffffff;
+}
+
+.ant-checkbox-group-item {
+  display: block;
+  display: flex;
+  margin-bottom: 12px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}

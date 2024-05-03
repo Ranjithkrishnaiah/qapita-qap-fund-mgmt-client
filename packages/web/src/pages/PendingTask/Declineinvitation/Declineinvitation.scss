@@ -1,0 +1,47 @@
+@import "../../../../assets/scss/abstracts//variables";
+
+form.firmProfileForm {
+  @media all and (max-width: 767px) {
+    padding: 0px;
+  }
+
+  .ant-modal-body {
+    padding: 30px 50px;
+  }
+}
+
+.ant-modal-title {
+  font-size: 18px;
+  color: #202020;
+  font-family: $font-family-lato;
+  font-weight: $font-weight-bold;
+}
+
+.newStyle1 .ant-modal-header {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #ffce5e;
+  padding: 25px;
+}
+
+.newStyle1 .ant-modal-footer {
+  display: none;
+  button {
+    font-size: 14px;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-bold;
+    border-radius: 6px;
+  }
+
+  button.firmProfileCancelBtn {
+    color: $primary-color-purple;
+    border: 1px solid $primary-color-purple;
+  }
+}
+
+.modalText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

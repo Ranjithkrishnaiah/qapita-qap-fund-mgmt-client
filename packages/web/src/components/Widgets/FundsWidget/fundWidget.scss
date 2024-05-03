@@ -1,0 +1,43 @@
+.fundWidgetWrapper {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.fundCardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 20px;
+
+  @media all and (max-width: 991px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media all and (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.addFundBtn {
+  color: #ffffff;
+  background-color: #633ea5;
+  border-radius: 6px;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Lato", sans-serif;
+}
+
+.fundheading {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #202020;
+}
+
+.fundWidgetHeadingWrapper {
+  border-bottom: 2px solid #202020;
+  padding-bottom: 0.3em;
+}
